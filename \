@@ -1,9 +1,12 @@
 import logo from '../img/logo.svg'
 import '../styles/Login.scss'
 import burger from '../img/menu.svg'
-import MyButton from './UI/MyButton/MyButton'
+import MyButton from '../components/UI/MyButton/MyButton'
+import { Link, useLocation } from 'react-router-dom'
 
 const LogIn: React.FC = () => {
+	const location = useLocation()
+	console.log(location)
 	return (
 		<div>
 			<header className="login__header">
@@ -28,7 +31,9 @@ const LogIn: React.FC = () => {
 						/>
 					</form>
 					<MyButton>Войти</MyButton>
-					<p className="login__form-anotation">Еще нет аккаунта? Регистрация</p>
+					<p className="login__form-anotation">
+						Еще нет аккаунта? <Link to="/auth">Регистрация</Link>
+					</p>
 				</div>
 			</div>
 		</div>

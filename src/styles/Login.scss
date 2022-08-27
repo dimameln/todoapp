@@ -1,4 +1,72 @@
-.img {
-  width: 120px;
-  height: 50px;
+.login__header__inner {
+	display: flex;
+	justify-content: space-between;
+	padding: 25px 20px;
+}
+
+.burger {
+	width: 44px;
+	height: 44px;
+
+	&:hover {
+		cursor: pointer;
+	}
+}
+
+.logo {
+	width: 120px;
+	height: 50px;
+
+	&:hover {
+		cursor: pointer;
+	}
+}
+
+.container {
+	width: 100%;
+	max-width: 1000px;
+	padding: 0 15px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.login__form {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	max-width: 350px;
+	margin: 0 auto;
+	margin-top: 160px;
+	box-shadow: 0px 10px 25px rgba(29, 52, 54, 0.08);
+	border-radius: 10px;
+}
+
+.login__form-tittle {
+	border: 1px solid #000000;
+	font-size: 18px;
+	font-weight: 600;
+	padding: 3px 90px;
+	color: #29a19c;
+	width: fit-content;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+
+.login__form__input {
+	border-radius: 8px;
+	border: 1px solid rgba(40, 40, 70, 0.1);
+	padding: 10px 15px;
+	margin-top: 20px;
+	width: 100%;
+	max-width: 310px;
+
+	&[type='text'] {
+		font-family: 'Nunito Sans', sans-serif;
+		color: rgba(0, 0, 0, 0.3);
+		font-size: 14px;
+	}
+}
+
+.login__form-anotation {
+	padding-bottom: 40px;
 }
